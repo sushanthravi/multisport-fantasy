@@ -1,0 +1,451 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family:
+    Inter,
+    Arial,
+    sans-serif;
+
+  background: #0b1020;
+  color: white;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+
+/* APP */
+
+.app {
+  min-height: 100vh;
+}
+
+
+/* HEADER */
+
+.main-header {
+  padding: 26px 40px 18px;
+
+  background: #080c18;
+
+  border-bottom: 1px solid #232d45;
+}
+
+.main-header h1 {
+  margin: 0;
+
+  font-size: 28px;
+}
+
+.main-header p {
+  margin: 6px 0 0;
+
+  color: #8793ab;
+}
+
+
+/* TABS */
+
+.tabs {
+  display: flex;
+
+  gap: 8px;
+
+  padding: 16px 40px;
+
+  background: #101728;
+
+  border-bottom: 1px solid #273149;
+}
+
+.tabs button {
+  border: none;
+
+  padding: 10px 20px;
+
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #8d99b0;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.tabs button:hover {
+  background: #1d263a;
+
+  color: white;
+}
+
+.tabs .active-tab {
+  background: #1dd8c0;
+
+  color: #071020;
+}
+
+
+/* OVERALL */
+
+.overall-page {
+  padding: 32px 40px;
+}
+
+.overall-page h2 {
+  margin-top: 0;
+}
+
+.sport-summary-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 18px;
+
+  margin-top: 24px;
+}
+
+.sport-summary-card {
+  padding: 24px;
+
+  border-radius: 14px;
+
+  background: #171f33;
+
+  border: 1px solid #2b3752;
+}
+
+.sport-summary-card h3 {
+  margin-bottom: 5px;
+}
+
+.sport-summary-card p {
+  color: #8d99b0;
+}
+
+.sport-summary-card button {
+  margin-top: 14px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 10px 14px;
+
+  background: #1dd8c0;
+
+  color: #071020;
+
+  cursor: pointer;
+
+  font-weight: 700;
+}
+
+.sport-icon {
+  font-size: 28px;
+}
+
+.future-sport {
+  opacity: 0.55;
+}
+
+
+/* SPORT PAGE */
+
+.sport-page {
+  max-width: 1100px;
+
+  margin: auto;
+
+  padding: 30px 40px;
+}
+
+.sport-title {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.sport-title h2 {
+  margin: 5px 0 0;
+}
+
+.sport-label {
+  color: #1dd8c0;
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* SEARCH */
+
+.search-box {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  border-radius: 8px;
+
+  border: 1px solid #35405c;
+
+  background: #11192b;
+
+  color: white;
+
+  margin-bottom: 16px;
+}
+
+
+/* FILTER BUTTONS */
+
+.filter-buttons {
+  display: flex;
+
+  gap: 8px;
+
+  margin-bottom: 18px;
+}
+
+.filter-buttons button {
+  border: none;
+
+  padding: 8px 15px;
+
+  border-radius: 20px;
+
+  background: #252f46;
+
+  color: #bbc4d6;
+
+  cursor: pointer;
+}
+
+.filter-buttons .active-filter {
+  background: #1dd8c0;
+
+  color: #071020;
+}
+
+
+/* PLAYER LIST */
+
+.player-list {
+  background: #141c2e;
+
+  border: 1px solid #28344e;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+}
+
+
+/* FPL ROW */
+
+.athlete-row {
+  display: grid;
+
+  grid-template-columns:
+    minmax(260px, 1fr)
+    100px
+    100px
+    90px;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 14px 18px;
+
+  border-bottom: 1px solid #273149;
+}
+
+.athlete-row:last-child {
+  border-bottom: none;
+}
+
+
+/* F1 */
+
+.f1-table-header,
+.f1-driver-row {
+  display: grid;
+
+  grid-template-columns:
+    minmax(260px, 1fr)
+    120px
+    100px
+    100px
+    90px;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.f1-table-header {
+  padding: 10px 18px;
+
+  color: #72809b;
+
+  font-size: 11px;
+}
+
+.f1-driver-row {
+  padding: 14px 18px;
+
+  border-bottom: 1px solid #273149;
+}
+
+.f1-driver-row:last-child {
+  border-bottom: none;
+}
+
+
+/* ATHLETE */
+
+.athlete-main {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.athlete-main p {
+  margin: 4px 0 0;
+
+  color: #8490a7;
+
+  font-size: 12px;
+}
+
+.athlete-badge {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 10px;
+
+  background: #252f46;
+
+  font-size: 20px;
+}
+
+.athlete-stat {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.athlete-stat small {
+  color: #74819a;
+
+  font-size: 10px;
+}
+
+.athlete-stat strong {
+  font-size: 14px;
+}
+
+
+/* DRAFT */
+
+.draft-button {
+  border: none;
+
+  border-radius: 7px;
+
+  padding: 9px 13px;
+
+  background: #1dd8c0;
+
+  color: #071020;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+.draft-button:hover {
+  background: #48e9d4;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+  .main-header,
+  .tabs,
+  .sport-page,
+  .overall-page {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .athlete-row {
+    grid-template-columns:
+      1fr
+      80px;
+  }
+
+  .f1-driver-row {
+    grid-template-columns:
+      1fr
+      80px;
+  }
+
+  .f1-table-header {
+    display: none;
+  }
+}
+.nfl-player-row {
+  display: grid;
+
+  grid-template-columns:
+    minmax(270px, 1fr)
+    100px
+    100px
+    90px;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 14px 18px;
+
+  border-bottom: 1px solid #273149;
+}
+
+.nfl-player-row:last-child {
+  border-bottom: none;
+}
+
+.nfl-player-row:hover {
+  background: #1a2438;
+}
