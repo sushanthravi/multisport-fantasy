@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Generated from data/fpl.db during npm run build
+/public/data/fpl.json
+/public/data/draft-catalog.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
